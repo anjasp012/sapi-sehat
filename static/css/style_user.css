@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar-brand {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Hero Section */
+.judul {
+  font-size: 4em;
+}
+
+.judul-algoritma {
+  font-size: 4em;
+  color: #6faa02;
+  overflow: hidden;
+  border-right: 2px solid #6faa02;
+  white-space: nowrap;
+  margin: 0;
+  letter-spacing: 4px;
+  animation: typing 3.5s steps(40, end), /* Waktu animasi dan jumlah langkah */ blink-caret 0.75s step-end infinite; /* Waktu animasi dan pola muncul/menghilang caret */
+}
+
+/* Animasi mengetik */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Animasi caret muncul/menghilang */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #6faa02;
+  }
+}
+
+/* Penyakit Section */
+.content {
+  color: #ffffff;
+}
+
+.titlepage h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.penyakit-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.penyakit-list p {
+  margin: 10px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #7fc472;
+  border-radius: 10px;
+}
+
+.penyakit-list p::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #7fc472;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.bg-green {
+  background-color: #6faa02 !important;
+  transition: background-color 0.3s ease;
+}
+
+/* Floating Button WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-float a {
+  display: block;
+  background-color: #25d366;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.whatsapp-float a:hover {
+  background-color: #128c7e;
+  transform: scale(1.1);
+}
+
+.whatsapp-float i {
+  line-height: 60px;
+}
